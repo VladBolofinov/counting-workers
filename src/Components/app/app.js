@@ -24,10 +24,9 @@ class App extends Component {
         this.maxId = 4;
     }
 
-
     deleteItem = (id) => {
-        this.setState(({data}) => {
-            return  {
+        this.setState(({data}) => { //setState принимает как аргумент ф-цию.
+            return  {                     //Эта функция получает предыдущее состояние в качестве аргумента
                 data: data.filter(item => item.id !== id)
             }
         })
@@ -83,13 +82,6 @@ class App extends Component {
         this.setState({term});
     }
 
-/*    filterSalaryAbove1k = (data) => {
-        this.setState((prevState) => {
-             data: data.filter(item => {
-                return item.salary >= 1000;
-            })
-        })
-    }*/
 
     filterPost = (items,filter) => {
         switch (filter) {

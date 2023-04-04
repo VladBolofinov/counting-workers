@@ -24,21 +24,14 @@ class TestSection extends Component {
         return  (
             <div className="wrapper">
                 <div className={classnames}>
-                    <p>{+number + 1}{text}</p>
-                    <button onClick={this.drawBlock} className="newBtn">Click Here</button>
                 </div>
                 <div className={classnames}>
-                    <p>{+number + 2}{text}</p>
-                    <button onClick={this.drawBlock} className="newBtn">Click Here</button>
                 </div>
                 <div className={classnames}>
-                    <p>{+number + 3}{text}</p>
-                    <button onClick={this.drawBlock}  className="newBtn">Click Here</button>
                 </div>
             </div>
         )
     }
-
 }
 
 export default TestSection;
